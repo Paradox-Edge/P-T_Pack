@@ -1,0 +1,89 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://lights/color-square.png" type="Texture" id=1]
+[ext_resource path="res://weapons/weapons-n.png" type="Texture" id=2]
+[ext_resource path="res://weapons/weapons-c.png" type="Texture" id=3]
+[ext_resource path="res://sfx/thruster-eit.tscn" type="PackedScene" id=4]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/sfx/thruster_bits/blast_head.tscn" type="PackedScene" id=5]
+
+[node name="SYSTEM_THRUSTER_PARADOX_RCS2" instance=ExtResource( 4 )]
+scale = Vector2( 0.15, 0.6 )
+mainBrightRatio = 0.5
+repairReplacementPrice = 45000.0
+repairFixPrice = 15000.0
+exhaustEmitOffset = 50.0
+distanceScale = 0.0
+wearPowerMaxChance = 0.1
+wearChance = 0.05
+accelerationFailLimit = 500.0
+accelerationFailScale = 500.0
+lightLagChance = 0.5
+startJolt = 0.0
+thrust = 8000.0
+particleChance = 1.7
+fadeSeconds = 1.0
+windUpSeconds = 0.33
+particleScale = 2.6
+randomness = 0.0
+heatCone = 0.1
+minPower = 0.05
+damageWearCapacity = 900.0
+damageBentCapacity = 900.0
+damageBentThreshold = 400.0
+damageChokeCapacity = 1200.0
+damageChokeThreshold = 400.0
+specialFuelLimit = 0.0
+heatFireThreshold = 200.0
+heatFireScale = 800.0
+maxMissalignment = 0.262
+specificImpulse = 500.0
+thermalFactor = 50.0
+powerDraw = 25000.0
+gimbalPowerDraw = 0.0
+thermalHitFactor = 1.0
+gimbal = 1.0
+ignitionsPerSecond = 5.0
+gimbalAccurancy = 1.0
+gimbalPerSecond = 7.0
+gimbalRestAngle = 0.0
+gimbalVectoredThrust = false
+pulsePerSecond = 5.0
+externalPower = true
+tuneThrustMax = 2.0
+tuneThrustMin = 0.2
+systemName = "SYSTEM_THRUSTER_PARADOX_RCS2"
+mass = 150
+maxVolume = -15
+
+[node name="allbright" type="Light2D" parent="." index="0"]
+editor_only = true
+texture = ExtResource( 1 )
+texture_scale = 32.0
+range_height = 2048.0
+range_z_min = -4096
+range_z_max = 4096
+
+[node name="Flare" parent="." index="3"]
+position = Vector2( 0.00115016, 60 )
+texture_scale = 5.0
+color = Color( 0.45, 0.12, 0.94, 0 )
+
+[node name="nozzle" parent="." index="4"]
+position = Vector2( 0, 50.0 )
+rotation = 3.14159
+scale = Vector2( 1.8, 0.9 )
+texture = ExtResource( 3 )
+normal_map = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 617, 180, 46, 82 )
+
+[node name="heat" parent="nozzle" index="0"]
+position = Vector2( -3.41061e-13, 0 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 361, 180, 46, 82 )
+
+[node name="head" parent="." index="5" instance=ExtResource( 5 )]
+position = Vector2( 0, 10.0 )
+
+[editable path="nozzle"]
