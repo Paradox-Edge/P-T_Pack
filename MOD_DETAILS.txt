@@ -1,0 +1,70 @@
+;MOD_ID|paradoxedge.thrusters
+;MOD_NAME|P-T Pack
+
+[center][b]P-T Pack[/b][/center]
+
+[b]P-T "RCS Mk1"[/b]
+
+A high-efficiency, high-performance RCS thruster. Cannot be uptuned, but can be downtuned to 20% nominal thrust.
+[table=1]
+[cell]Thrust: 1600 kN[/cell]
+[cell]Exhaust Velocity: 60 km/s[/cell]
+[cell]Power consumption: 51.2 MW[/cell]
+[cell]Thermal Consumption: 19.2 GW[/cell]
+[cell]Operation mode: Variable thrust[/cell]
+[cell]Mass: 225 kg[/cell]
+[/table]
+
+[b]P-T "Harvester"[/b]
+
+The Harvester replaces a typical Torch with a magnetic funnel capable of harvesting propellant directly from the ring. Due to mechanical sensitivity, it will only function when not experiencing any acceleration.
+[table=1]
+[cell]Max Reclamation Rate: 100 kg/s[/cell]
+[cell]Exhaust Velocity: -0.1~ km/s[/cell]
+[cell]Power consumption: 254 MW[/cell]
+[cell]Thermal Consumption: 32 GW[/cell]
+[cell]Operation mode: Magnetic funnel[/cell]
+[cell]Funnel Tolerance: 0.01 m/s²[/cell]
+[cell]Mass: 3,500 kg[/cell]
+[/table]
+
+[b]P-T "Twig"[/b]
+
+Long, slender, fragile. Like a twig. Shares many specs with the Mk1 but focuses on economy and affordability. Though its performance is lackluster, often inducing wobbling with autopilots, its long profile has a hidden benefit of clearing some of the angles blocked by shorter thrusters.
+[table=1]
+[cell]Thrust: 800 kN[/cell]
+[cell]Exhaust Velocity: 500 km/s[/cell]
+[cell]Power consumption: 25 MW[/cell]
+[cell]Thermal Consumption: 4 GW[/cell]
+[cell]Operation mode: Variable thrust[/cell]
+[cell]Mass: 150 kg[/cell]
+[/table]
+
+[b]P-T "Split"[/b]
+
+A minor modification to the well-established Runasimi High-Resolution LIDAR, reversing half of the scanning frequency 180 degrees, resulting in a split-scan. It trades full detection for more consistent overlap.
+
+
+[b]P-T "Triangle"[/b]
+
+Three conical scanners aligned to produce good overlap at the cost of long-range detection.
+
+
+[b]P-T "Shell"[/b]
+
+Despite its simple construction and low resolution scan, it provides an effective, high performance sweep via an interpolative scanning method.
+
+
+[b]P-T "Radix"[/b]
+
+The "Radix" scanner recycles infrared light in a straight-through scanning system, resulting in extreme radial scan coverage as the light bounces back and forth to and from the ship several times.
+
+
+[b]P-T "Comb"[/b]
+
+A novel take on a novel concept, the love child between sweeping and phase scanners, liquid crystals result in a beautiful chromatic array of scanning, ready to be interpreted by your poor, ailing on-board computer.
+
+
+[b]P-T "Pulse"[/b]
+
+A sidegrade to the CL-144PLA Phased LIDAR Array. By inserting a prism and swapping the processor, the ghosting mess becomes a much cleaner, sharper image, offering much higher long-range precision scanning at the cost of instantaneous proximity scanning due to frequent gaps.

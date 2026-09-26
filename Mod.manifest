@@ -37,3 +37,5 @@ dependancy_mod_ids=[ {
 "minimum_version": [ 2, 10, 5 ],
 "mod_id": "hev.IndustriesOfEnceladus"
 } ]
+conflicting_mod_ids=[ "wt.MoarRadars" ]
+manifest_url="https://raw.githubusercontent.com/Paradox-Edge/P-T_Pack/refs/heads/main/Mod.manifest"
